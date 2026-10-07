@@ -64,4 +64,15 @@ describe('Awards & Stats Calculation', () => {
     expect(displayName('John Doe', true)).toBe('JD');
     expect(displayName('John Doe', false)).toBe('John Doe');
   });
+
+  it('runs complete analysis on built-in sample chat', async () => {
+    const { SAMPLE_CHAT_TEXT, SAMPLE_CHAT_NAME } = await import('../sampleChat');
+    const parsed = parseChatText(SAMPLE_CHAT_TEXT, SAMPLE_CHAT_NAME);
+    expect(parsed.totalMessages).toBeGreaterThan(30);
+    const awards = calculateAwards(parsed);
+    expect(awards.length).toBe(10);
+    const stats = calculateGroupStats(parsed);
+    expect(stats.totalSenders).toBeGreaterThanOrEqual(4);
+    expect(stats.busiestDay.count).toBeGreaterThan(0);
+  });
 });
