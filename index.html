@@ -3,11 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>group-chat-awards</title>
+    <title>Group Chat Awards — Awards Night for WhatsApp Groups</title>
+    <meta
+      name="description"
+      content="Turn your WhatsApp group chat export into an opulent Awards Night: Chatterbox, Night Owl, Ghost, and 10+ awards with 1080×1920 story cards. 100% private in your browser."
+    />
+    <meta name="theme-color" content="#0d0411" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Group Chat Awards — Awards Night for WhatsApp Groups" />
+    <meta
+      property="og:description"
+      content="Turn your WhatsApp group chat export into an awards night gala: who talks most, who replies fastest, and who lurks in silence. 100% private in your browser."
+    />
+    <meta property="og:image" content="https://group-chat-awards.vercel.app/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Group Chat Awards — Awards Night for WhatsApp Groups" />
+    <meta
+      name="twitter:description"
+      content="Turn your WhatsApp group chat export into an awards night gala. 100% private in your browser."
+    />
+    <meta name="twitter:image" content="https://group-chat-awards.vercel.app/og-image.png" />
   </head>
   <body>
     <div id="app"></div>
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif; background: #0d0411; color: #fae9b3; min-height: 100vh;">
+        <h1 style="font-family: serif; color: #d4af37;">Group Chat Awards</h1>
+        <p>This gala application requires JavaScript to parse and analyze your WhatsApp chat exports entirely within your browser.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
