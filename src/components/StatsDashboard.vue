@@ -39,11 +39,11 @@ const formattedBusiestDay = computed(() => {
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto px-4 py-8 space-y-10">
+  <div class="max-w-4xl mx-auto px-4 py-8 pt-6 sm:pt-8 space-y-10">
     <!-- Header Summary -->
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-velvet-700 pb-6">
       <div>
-        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-2">
+        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-300 text-xs font-semibold tracking-wider uppercase mb-3">
           <span>Gala Digest</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold font-serif text-sand-50">
