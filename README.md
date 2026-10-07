@@ -2,6 +2,8 @@
 
 Drop in your WhatsApp group chat export. Get an awards night for the group: who talks most, who never replies, who sends voice notes at 3am.
 
+**Live site:** https://group-chat-awards.vercel.app
+
 ![Group Chat Awards](docs/screenshot.png)
 
 ## Features
