@@ -36,7 +36,7 @@ export function isSystemMessage(senderOrMsg: string, text?: string): boolean {
 
 // Flexible date parsing for WhatsApp export formats (iOS and Android, 12h/24h, multiple date separators)
 export function parseWhatsAppDate(dateStr: string, timeStr: string): Date | null {
-  const cleanDate = dateStr.replace(/[\/\.]/g, '-').trim();
+  const cleanDate = dateStr.replace(/[./]/g, '-').trim();
   const dateParts = cleanDate.split('-').map(Number);
   if (dateParts.length !== 3 || dateParts.some(isNaN)) return null;
 

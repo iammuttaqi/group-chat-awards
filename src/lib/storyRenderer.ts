@@ -47,7 +47,6 @@ export async function renderStoryCardToBlob(options: RenderOptions): Promise<Blo
   ctx.strokeRect(pad + 16, pad + 16, width - (pad + 16) * 2, height - (pad + 16) * 2);
 
   // Corner ornaments
-  const cornerSize = 40;
   const corners = [
     [pad + 16, pad + 16],
     [width - pad - 16, pad + 16],

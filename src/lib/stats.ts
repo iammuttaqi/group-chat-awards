@@ -1,4 +1,4 @@
-import type { ChatMessage, GroupStats, ParsedChat } from './types';
+import type { GroupStats, ParsedChat } from './types';
 
 const COMMON_STOP_WORDS = new Set([
   'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'i', 'it', 'for', 'not', 'on', 'with',
