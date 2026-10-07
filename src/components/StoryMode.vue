@@ -55,6 +55,7 @@ function goToSlide(index: number) {
 
 // Keyboard navigation
 function handleKeyDown(e: KeyboardEvent) {
+  if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
   if (e.key === 'ArrowRight' || e.key === ' ') {
     e.preventDefault();
     nextSlide();
