@@ -80,15 +80,10 @@ function triggerFileInput() {
             ? 'border-gold-400 bg-velvet-800/90 scale-[1.01]'
             : 'border-velvet-600 bg-velvet-850/70 hover:border-gold-500/60 hover:bg-velvet-800/50'
         "
-        tabindex="0"
-        role="button"
-        aria-label="Upload chat export file"
         @dragover.prevent="isDragging = true"
         @dragleave.prevent="isDragging = false"
         @drop.prevent="handleDrop"
         @click="triggerFileInput"
-        @keydown.enter="triggerFileInput"
-        @keydown.space.prevent="triggerFileInput"
       >
         <input
           ref="fileInputRef"

@@ -150,9 +150,9 @@ async function handleShareOrDownload() {
           {{ currentAward.subtitle }}
         </span>
 
-        <h3 class="text-2xl sm:text-3xl font-black font-serif text-sand-50 tracking-tight mb-2">
+        <h2 class="text-2xl sm:text-3xl font-black font-serif text-sand-50 tracking-tight mb-2">
           {{ currentAward.title }}
-        </h3>
+        </h2>
 
         <p class="text-xs text-sand-300 max-w-xs mb-6 italic">
           "{{ currentAward.description }}"
