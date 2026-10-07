@@ -1,8 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-velvet-950: #0d0411;
+  --color-velvet-900: #17071e;
+  --color-velvet-850: #200b2a;
+  --color-velvet-800: #2c0f3b;
+  --color-velvet-700: #3e1852;
+  --color-velvet-600: #572573;
+  --color-velvet-500: #7b38a0;
+
+  --color-gold-200: #fef0ca;
+  --color-gold-300: #fde293;
+  --color-gold-400: #f4ca56;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b08d23;
+  --color-gold-700: #886915;
+
+  --color-sand-50: #fdfaf4;
+  --color-sand-100: #f6efe1;
+  --color-sand-200: #e5dac9;
+  --color-sand-400: #b5a297;
+  --color-sand-600: #786962;
+
+  --radius-gala: 14px;
+}
+
 :root {
   color-scheme: dark;
+  font-family: var(--font-sans);
+  background-color: var(--color-velvet-950);
+  color: var(--color-sand-100);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--color-velvet-950);
+  color: var(--color-sand-100);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom spotlight effect */
+.spotlight-beam {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0.04) 45%, transparent 70%);
+}
+
+/* Subtle gold foil border shimmer */
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.12), inset 0 0 15px rgba(212, 175, 55, 0.05);
 }
