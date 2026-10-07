@@ -81,4 +81,12 @@ Line 3 of Alice message
     expect(date?.getFullYear()).toBe(2023);
     expect(date?.getDate()).toBe(24);
   });
+
+  it('strips leading UTF-8 byte order mark (BOM)', () => {
+    const withBom = '\uFEFF[10/24/23, 2:30:00 PM] Alice: Hello with BOM!';
+    const parsed = parseChatText(withBom);
+    expect(parsed.totalMessages).toBe(1);
+    expect(parsed.messages[0].sender).toBe('Alice');
+    expect(parsed.messages[0].text).toBe('Hello with BOM!');
+  });
 });

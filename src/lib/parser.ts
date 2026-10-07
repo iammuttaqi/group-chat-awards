@@ -118,7 +118,8 @@ export function parseLine(line: string): RawParsedLine | null {
 }
 
 export function parseChatText(rawText: string, chatTitle = 'WhatsApp Chat'): ParsedChat {
-  const lines = rawText.split(/\r?\n/);
+  const sanitized = rawText.replace(/^\uFEFF/, '').replace(/[\u200E\u200F\u202A-\u202E]/g, '');
+  const lines = sanitized.split(/\r?\n/);
   const messages: ChatMessage[] = [];
   const senderSet = new Set<string>();
 
